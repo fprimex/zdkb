@@ -1,0 +1,26 @@
+from setuptools import setup
+
+setup(name="zdkb",
+      version="1.0.0",
+      scripts=["bin/zdkb"],
+      packages=["zdkb"],
+      description="Manage Zendesk Knowledgebases.",
+      long_description="Manage Zendesk Knowledgebases.",
+      classifiers=["Development Status :: 4 - Beta",
+        "Intended Audience :: End Users/Desktop",
+        "Intended Audience :: Customer Service",
+        "License :: OSI Approved :: Apache Software License",
+        "Topic :: Utilities",
+      ],
+      keywords="zendesk knowledgebase forums helpcenter",
+      author="Brent Woodruff",
+      author_email="brent@fprimex.com",
+      url="http://github.com/fprimex/zdkb",
+      license="Apache",
+      include_package_data=True,
+      zip_safe=False,
+      install_requires=[
+        "zdesk",
+        "zdeskcfg",
+      ],
+)
